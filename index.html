@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Programmer's Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divce-width,initial-scale=1.0">
+  </head>
+  <body>
+    <div class="header">
+    <h1 id="title">Coding Roadmap Survey</h1>
+    <p id="description">Please answer the following questions to help Miko create a roadmap for your coding journey!</p>
+    </div>
+
+    <div class="container">
+    <form id="survey-form">
+      <div class="form-group">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" name="name" class="user-details" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+      <label for="email" id="email-label">Email</label>
+      <input type="email" id="email" name="email" class="user-details" placeholder="Enter your email address" required>
+      </div>
+      <div class="form-group">
+      <label for="number" id="number-label">Age</label>
+      <input type="number" id="number" name="number" class="user-details" placeholder="Your age" min="10" max="100" required>
+      </div>
+      <div class="form-group">
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="role" class="user-details">
+        <option disabled selected value="select-role">Select Role</option>
+        <option value="student">Student</option>
+        <option value="self-learner">Self-Learner</option>
+        <option value="working-professional">Working Professional</option>
+        <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+      <p>What is your current skills or knowledge of coding or programming?</p>
+      <input type="radio" id="beginner" name="level" value="Beginner" class="input-radio" checked>
+      <label for="beginner"> Beginner - I am just starting out.</label><br>
+      <input type="radio" id="intermediate" name="level" value="Intermediate" class="input-radio">
+      <label for="intermediate"> Intermediate - I can code simple programs.</label><br>
+      <input type="radio" id="advanced" name="level" value="Advanced" class="input-radio">
+      <label for="advanced"> Advanced - I can build full projects and work with frameworks.</label><br>
+      </div>
+      <div class="form-group">
+      <p>What programming languages would you like to learn?</p>
+      <input type="checkbox" id="html" name="learn" value="HTML" class="input-checkbox">
+      <label for="html"> HTML</label><br>
+      <input type="checkbox" id="css" name="learn" value="CSS" class="input-checkbox">
+      <label for="css"> CSS</label><br>
+      <input type="checkbox" id="javascript" name="learn" value="JavaScript" class="input-checkbox">
+      <label for="javascript"> JavaScript</label><br>
+      <input type="checkbox" id="java" name="learn" value="Java" class="input-checkbox">
+      <label for="java"> Java</label><br>
+      <input type="checkbox" id="c/c++" name="learn" value="C/C++" class="input-checkbox">
+      <label for="c/c++"> C/C++</label><br>
+      <input type="checkbox" id="python" name="learn" value="Python" class="input-checkbox">
+      <label for="python"> Python</label><br>
+      <input type="checkbox" id="php" name="learn" value="PHP" class="input-checkbox">
+      <label for="php"> PHP</label><br>
+      <input type="checkbox" id="r" name="learn" value="r" class="input-checkbox">
+      <label for="r"> R</label><br>
+      <input type="checkbox" id="go" name="learn" value="Go" class="input-checkbox">
+      <label for="go"> Go</label><br>
+      <input type="checkbox" id="swift" name="learn" value="Swift" class="input-checkbox">
+      <label for="swift"> Swift</label><br>
+      <input type="checkbox" id="other" name="learn" value="Other" class="input-checkbox">
+      <label for="other"> Other</label><br>
+      </div>
+    <div class="form-group">
+    <p>Please share how learning code can help you with your career goals.
+      <textarea id="career-goals" name="career-goals" placeholder="Write your comment here..."></textarea>
+    </div>
+    <div class="form-group">
+    <button type="submit" id="submit"><strong>Submit</button>
+    </div>
+    </form>
+    </div>
+  </body>
+</html>
